@@ -52,7 +52,9 @@ var cronJob = cron.job("*/5 * * * * *", function(){
                               console.log(text)
                               slack.send({
                                    channel: channelName,
-                                   text: text
+                                   text: text,
+                                   icon_url: 'https://s3-us-west-2.amazonaws.com/slack-files2/bot_icons/2014-06-15/2394534345_48.png',
+                                   username: 'World Cup 2014'
                              });
 
 
@@ -68,7 +70,9 @@ var cronJob = cron.job("*/5 * * * * *", function(){
 
                               slack.send({
                                    channel: channelName,
-                                   text: text
+                                   text: text,
+                                   icon_url: 'https://s3-us-west-2.amazonaws.com/slack-files2/bot_icons/2014-06-15/2394534345_48.png',
+                                   username: 'World Cup 2014'
                              });
 
                         }
