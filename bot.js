@@ -52,8 +52,7 @@ var cronJob = cron.job("*/5 * * * * *", function(){
                               console.log(text)
                               slack.send({
                                    channel: channelName,
-                                   text: text,
-                                   username: 'WorldCupBot'
+                                   text: text
                              });
 
 
@@ -69,8 +68,7 @@ var cronJob = cron.job("*/5 * * * * *", function(){
 
                               slack.send({
                                    channel: channelName,
-                                   text: text,
-                                   username: 'WorldCupBot'
+                                   text: text
                              });
 
                         }
